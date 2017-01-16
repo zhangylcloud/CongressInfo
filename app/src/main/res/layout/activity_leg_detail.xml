@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_leg_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.zhang.homework9.LegDetailActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/leg_detail_button_space1"
+                android:layout_width="150dp">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/leg_detail_button_fav"
+                android:src="@android:drawable/btn_star"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:maxWidth="30dp">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/leg_detail_button_facebook"
+                android:src="@drawable/f"
+                android:layout_height="30dp"
+                android:layout_width="30dp">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/leg_detail_button_twitter"
+                android:src="@drawable/t"
+                android:layout_height="30dp"
+                android:layout_width="30dp">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/leg_detail_button_website"
+                android:src="@drawable/w"
+                android:layout_height="30dp"
+                android:layout_width="30dp">
+
+            </ImageView>
+
+
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/leg_detail_photo"
+        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal">
+
+    </ImageView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:id="@+id/leg_detail_party_icon">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/leg_detail_party_name">
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_name_title"
+                android:text="Name:">
+            </TextView>
+            <TextView
+                android:id="@+id/leg_detail_name">
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_email_title"
+                android:text="Email:"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/leg_detail_email">
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_chamber_title"
+                android:text="Chamber:">
+            </TextView>
+            <TextView
+                android:id="@+id/leg_detail_chamber">
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_contact_title"
+                android:text="Contact:">
+            </TextView>
+            <TextView
+                android:id="@+id/leg_detail_contact">
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_sterm_title"
+                android:text="Start Term:">
+            </TextView>
+            <TextView
+                android:id="@+id/leg_detail_sterm">
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_eterm_title"
+                android:text="End Term:">
+            </TextView>
+            <TextView
+                android:id="@+id/leg_detail_eterm">
+            </TextView>
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_term_title"
+                android:text="Term:">
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/leg_detail_term"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="150dp"
+                android:progress="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_office_title"
+                android:text="Office:">
+            </TextView>
+            <TextView
+                android:id="@+id/leg_detail_office">
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_state_title"
+                android:text="State:">
+            </TextView>
+            <TextView
+                android:id="@+id/leg_detail_state">
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_fax_title"
+                android:text="Fax:">
+            </TextView>
+            <TextView
+                android:id="@+id/leg_detail_fax">
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/leg_detail_birthday_title"
+                android:text="Birthday:">
+            </TextView>
+            <TextView
+                android:id="@+id/leg_detail_birthday">
+            </TextView>
+
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

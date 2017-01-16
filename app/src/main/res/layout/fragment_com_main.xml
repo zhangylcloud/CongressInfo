@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhang.homework9.com_main">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/comLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include
+                    android:id="@+id/comHouse"
+                    layout="@layout/com_house"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+                <include
+                    android:id="@+id/comSenate"
+                    layout="@layout/com_senate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+                <include
+                    android:id="@+id/comJoint"
+                    layout="@layout/com_joint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</FrameLayout>
